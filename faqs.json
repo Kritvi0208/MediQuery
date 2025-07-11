@@ -1,0 +1,274 @@
+{
+  "Health Assistant": [
+    {
+      "question": "I have a sore throat and mild fever. What could be wrong?",
+      "answer": "This may be due to a throat infection or common cold. Stay hydrated and monitor symptoms. If it worsens after 2-3 days, consult a doctor."
+    },
+    {
+      "question": "I'm feeling very tired and dizzy all the time.",
+      "answer": "Fatigue and dizziness can result from dehydration, anemia, or low blood pressure. Try resting and staying hydrated, and consult a doctor if it persists."
+    },
+    {
+      "question": "I’ve been coughing for more than a week. What should I do?",
+      "answer": "A persistent cough could be due to bronchitis, allergies, or an infection. It’s best to consult a physician if it lasts more than a few days."
+    },
+    {
+      "question": "I have a headache that won’t go away.",
+      "answer": "Persistent headaches can have many causes like stress, dehydration, or migraine. Seek medical advice if it's severe or recurrent."
+    },
+    {
+      "question": "My chest feels tight and I’m short of breath.",
+      "answer": "This could be serious. Chest tightness and breathlessness may indicate a heart or lung issue. Please seek immediate medical attention."
+    },
+    {
+      "question": "I'm feeling low and unmotivated lately. Could it be depression?",
+      "answer": "Feeling persistently low, hopeless, or unmotivated can be a sign of depression. It's advisable to talk to a mental health professional."
+    },
+    {
+      "question": "I’ve had diarrhea since morning. What should I do?",
+      "answer": "Drink fluids to stay hydrated. If diarrhea continues for more than 2 days or includes blood, consult a doctor."
+    },
+    {
+      "question": "Why do I get frequent nosebleeds?",
+      "answer": "Frequent nosebleeds can be due to dry air, allergies, or high blood pressure. If persistent, consult an ENT specialist."
+    },
+    {
+      "question": "My joints hurt when I wake up. What could be the cause?",
+      "answer": "Morning joint stiffness could indicate arthritis. Stretching and staying active helps, but medical evaluation is recommended."
+    },
+    {
+      "question": "I'm coughing and have chest pain. Should I be worried?",
+      "answer": "Yes, coughing with chest pain may signal an infection or other condition. It's important to consult a doctor."
+    },
+    {
+      "question": "I get anxious in public places. Is that normal?",
+      "answer": "This may be a sign of social anxiety. It’s common, and professional therapy can help manage it."
+    },
+    {
+      "question": "I feel breathless when climbing stairs.",
+      "answer": "Shortness of breath during exertion may relate to fitness, heart, or lung issues. If it's frequent, seek medical advice."
+    },
+    {
+      "question": "My stomach hurts after eating spicy food.",
+      "answer": "It may be gastritis or acid reflux. Try avoiding spicy food, and consult a doctor if the pain continues."
+    },
+    {
+      "question": "I feel bloated all the time. What’s wrong?",
+      "answer": "Bloating may be due to diet, IBS, or digestive issues. Track your food intake and visit a doctor if it continues."
+    },
+    {
+      "question": "I’m always thirsty and urinating a lot. Could it be diabetes?",
+      "answer": "Frequent urination and thirst are signs of high blood sugar. A blood test is needed to confirm diabetes."
+    },
+    {
+      "question": "I hear a ringing sound in my ears.",
+      "answer": "That could be tinnitus, which may be due to hearing damage or stress. A hearing specialist can help evaluate it."
+    },
+    {
+      "question": "I feel pain while urinating.",
+      "answer": "This may be a urinary tract infection (UTI). Drink fluids and consult a doctor for evaluation."
+    },
+    {
+      "question": "My period is irregular and painful.",
+      "answer": "Irregular or painful periods can be due to hormonal imbalance, PCOS, or stress. See a gynecologist for evaluation."
+    },
+    {
+      "question": "I have red, itchy bumps on my skin.",
+      "answer": "It may be an allergic reaction, insect bites, or eczema. Keep the area clean and see a dermatologist if needed."
+    },
+    {
+      "question": "I have a fever and body aches. Could it be flu?",
+      "answer": "Fever and aches are common in the flu. Rest, hydrate, and monitor. If breathing issues develop, see a doctor."
+    },
+
+        {
+      "question": "Why do I feel tired even after sleeping well?",
+      "answer": "Constant fatigue may be due to stress, poor sleep quality, anemia, or thyroid issues. Consider consulting a doctor for evaluation."
+    },
+    {
+      "question": "My child has a fever and is not eating well.",
+      "answer": "Children often eat less during illness. Keep them hydrated and monitor temperature. Visit a pediatrician if symptoms persist or worsen."
+    },
+    {
+      "question": "I’m having trouble concentrating and feel anxious.",
+      "answer": "These may be symptoms of anxiety or burnout. Practicing mindfulness and speaking with a counselor can be helpful."
+    },
+    {
+      "question": "I feel pain in my lower back every day.",
+      "answer": "Chronic lower back pain may be due to poor posture, muscle strain, or a spine issue. A physiotherapist or doctor can help."
+    },
+    {
+      "question": "My vision is blurry sometimes. What does it mean?",
+      "answer": "Blurry vision can result from screen overuse, eye strain, or high blood sugar. Get your eyes examined by a specialist."
+    },
+    {
+      "question": "Why do I feel hungry all the time?",
+      "answer": "Excess hunger can be due to high stress, poor nutrition, or medical conditions like diabetes. Keep a food diary and consult a doctor."
+    },
+    {
+      "question": "I feel nervous before every small task. Is that anxiety?",
+      "answer": "Yes, constant fear or worry about daily activities can indicate anxiety. Therapy and coping techniques are very effective."
+    },
+    {
+      "question": "My periods suddenly stopped. Should I worry?",
+      "answer": "Missed periods could be due to stress, weight changes, PCOS, menopause or pregnancy. A gynecologist can help assess the cause."
+    },
+    {
+      "question": "I feel lightheaded when I stand up quickly.",
+      "answer": "This could be a drop in blood pressure or dehydration. Drink fluids and consult a doctor if frequent."
+    },
+    {
+      "question": "What should I do if I get a burn?",
+      "answer": "Cool the area under running water for 10–15 minutes, don’t apply ice. If severe or blistering, get medical help."
+    },
+    {
+      "question": "My hands shake sometimes. Why?",
+      "answer": "Mild hand tremors can be caused by excessive caffeine intake, fatigue, anxiety, or low blood sugar. Persistent tremors should be medically reviewed."
+    },
+    {
+      "question": "I feel like I’m not good enough and avoid social events.",
+      "answer": "These could be signs of social anxiety or low self-esteem. Therapy can help you manage and improve your confidence."
+    },
+    {
+      "question": "I feel pain in my chest when I’m stressed.",
+      "answer": "Stress-induced chest pain is real but should never be ignored. Always consult a doctor to rule out cardiac causes."
+    },
+    {
+      "question": "I lost my appetite completely. What does it mean?",
+      "answer": "Loss of appetite can result from infection, stress, or digestive issues. If it continues for days, seek a medical opinion."
+    },
+    {
+      "question": "My ears feel blocked and I can't hear well.",
+      "answer": "This may be due to earwax, sinus infection, or fluid buildup. A doctor can clear and diagnose the problem."
+    },
+    {
+      "question": "My knee hurts when I walk or climb stairs.",
+      "answer": "Knee pain could be due to strain, cartilage wear, or arthritis. Rest and consult an orthopedic specialist if needed."
+    },
+    {
+      "question": "I feel like I can’t breathe deeply sometimes.",
+      "answer": "Breathlessness can stem from anxiety, asthma, or lung issues. Always get checked by a healthcare provider."
+    },
+    {
+      "question": "I cry often and feel hopeless.",
+      "answer": "These are signs of depression. Please consider reaching out to a mental health professional for support."
+    },
+    {
+      "question": "My stomach burns after meals.",
+      "answer": "That could be acid reflux or indigestion. Try avoiding spicy food, and seek medical advice if it’s frequent."
+    },
+    {
+      "question": "I see black spots or floaters in my vision.",
+      "answer": "Occasional floaters are common, but a sudden increase can be serious. Consult an eye doctor urgently."
+    },
+    {
+      "question": "I can't stop picking at my skin or nails.",
+      "answer": "This can be a sign of anxiety or OCD. Behavioral therapy and stress management can be very helpful."
+    },
+    {
+      "question": "I get panic attacks where I feel I can’t breathe.",
+      "answer": "Panic attacks are intense and scary but manageable. Deep breathing helps, and therapy can reduce their frequency."
+    },
+    {
+      "question": "My elderly parent forgets names and repeats things.",
+      "answer": "These can be early signs of dementia. It's best to consult a neurologist for proper screening."
+    },
+    {
+      "question": "I feel chest pain after running or climbing stairs.",
+      "answer": "This could indicate heart strain. Please consult a doctor immediately — especially if pain is tight or radiates."
+    },
+    {
+      "question": "I feel weak and pale — could it be anemia?",
+      "answer": "Yes, pale skin and fatigue can be signs of anemia. A simple blood test can confirm it."
+    },
+    {
+      "question": "I get constipated regularly. What can help?",
+      "answer": "Constipation may be due to low fiber or water intake. Drink more fluids, add fruits/veggies, and exercise. See a doctor if chronic."
+    },
+    {
+      "question": "I think I might be pregnant. What signs should I look for?",
+      "answer": "Early signs include missed periods, nausea, and fatigue. A home test can confirm, but see a gynecologist for proper care."
+    },
+    {
+      "question": "My child keeps coughing at night. What can I do?",
+      "answer": "It could be postnasal drip or asthma. Elevate their head, offer fluids, and consult a pediatrician if it persists."
+    },
+    {
+      "question": "I feel burning when I urinate.",
+      "answer": "That’s often a urinary tract infection (UTI). Drink water and consult a doctor for antibiotics if needed."
+    },
+    {
+      "question": "I feel tingling in my fingers and toes.",
+      "answer": "Tingling can be due to poor circulation, nerve compression, or vitamin deficiencies. A doctor can evaluate the cause."
+    },
+    {
+      "question": "My mood swings quickly between happy and sad.",
+      "answer": "Mood instability may be due to hormonal or emotional factors. If frequent, therapy or medical advice is helpful."
+    },
+    {
+      "question": "I feel detached from reality sometimes.",
+      "answer": "This could be a symptom of dissociation, often linked to anxiety or trauma. Please talk to a mental health professional."
+    },
+    {
+      "question": "I vomited after every meal today. What’s wrong?",
+      "answer": "Frequent vomiting can indicate food poisoning, gastritis, or a more serious issue. Seek medical attention immediately."
+    },
+    {
+      "question": "My back hurts from long sitting.",
+      "answer": "Prolonged sitting can strain back muscles. Take breaks, use good posture, and stretch regularly."
+    },
+    {
+      "question": "I feel pressure around my eyes and head.",
+      "answer": "This could be sinus-related or tension headache. Rest and warm compresses help, but see a doctor if persistent."
+    },
+    {
+      "question": "I have acne that won’t go away.",
+      "answer": "Chronic acne can be hormonal or stress-induced. Over-the-counter creams help, but a dermatologist can provide targeted treatment."
+    },
+    {
+      "question": "My legs swell by evening.",
+      "answer": "Leg swelling can result from poor circulation, prolonged standing, or kidney issues. Elevate your legs and consult a doctor if frequent."
+    },
+    {
+      "question": "I can't stop worrying about everything.",
+      "answer": "Excessive worry may be generalized anxiety disorder (GAD). Therapy and sometimes medication are effective treatments."
+    },
+    {
+      "question": "My blood pressure is always high.",
+      "answer": "Chronic high BP (hypertension) increases heart risk. Lifestyle changes and medication may be needed — consult your doctor."
+    },
+    {
+      "question": "My child scratches their head constantly. Could it be lice?",
+      "answer": "Yes, persistent scalp itching can be due to lice. Use a medicated shampoo and consult a pediatrician if unsure."
+    },
+    {
+      "question": "I often feel full even after small meals.",
+      "answer": "This could be due to indigestion, ulcers, or other digestive issues. A doctor can evaluate further."
+    },
+    {
+      "question": "My heart races sometimes for no reason.",
+      "answer": "Sudden palpitations can result from stress, caffeine, or heart rhythm issues. Consult a cardiologist if they are frequent or severe."
+    },
+
+    {
+      "question": "I feel overwhelmed and can’t focus on anything.",
+      "answer": "You may be experiencing burnout or anxiety. Try relaxation techniques and seek support from a mental health counselor."
+    },
+    {
+      "question": "What should I do if I get a deep cut?",
+      "answer": "Clean the wound with clean water and apply pressure to stop bleeding. Seek medical help if it is deep or bleeding heavily."
+    },
+    {
+      "question": "I fainted once recently. Should I worry?",
+      "answer": "A single fainting episode may be due to low blood sugar or dehydration, but you should get it checked to rule out underlying issues."
+    },
+    {
+      "question": "I can’t sleep at night. What can help?",
+      "answer": "Sleep issues may be caused by stress, screen use, or irregular routines. Try relaxation before bed and maintain a consistent schedule. If ongoing, seek help."
+    },
+    {
+      "question": "Disclaimer",
+      "answer": "This tool is for general informational purposes only and does not substitute professional medical advice, diagnosis, or treatment. Please consult a licensed healthcare provider for any health concerns."
+    }
+  ]
+}

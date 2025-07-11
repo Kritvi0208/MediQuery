@@ -1,0 +1,411 @@
+/* === RESET & BASE === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --font-main: 'Inter', sans-serif;
+
+  /* Light Mode */
+  --bg-light-gradient: linear-gradient(135deg, #f0eaff, #d7efff, #ffe9e9);
+  --text-light: #2e2e2e;
+  --card-light: rgb(255 255 255 / 60%);
+  --border-light: rgba(0, 0, 0, 0.1);
+   --text-accent-dark: #94b8ff;
+
+  /* Dark Mode */
+--bg-dark-gradient: radial-gradient(circle at 20% 30%, #16142c, #0b0931, #0f0b37);
+  --text-dark: #f5f5f5;
+  --card-dark: #1c1a47;
+  --border-dark: rgba(255, 255, 255, 0.08);
+
+  /* Pastel Accents */
+  --pastel-blue: #a5d8ff;
+  --pastel-purple: #e0d4fd;
+  --pastel-mint: #d0f0e0;
+
+  /* Updated Accent for Button */
+  --button-blue: #5d65cf;
+  --button-blue-hover: #4b4795;
+
+  --transition: all 0.3s ease-in-out;
+  --radius: 16px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background: var(--bg-light-gradient);
+  background-size: 400% 400%;
+  animation: meshMove 20s ease infinite;
+  color: var(--text-light);
+  transition: var(--transition);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
+  position: relative;
+  overflow-x: hidden;
+}
+.bg-blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.blob-1 {
+  top: 10%;
+  left: 60%;
+  width: 300px;
+  height: 300px;
+  background: #6c7ecf;
+}
+
+.blob-2 {
+  bottom: 5%;
+  right: 5%;
+  width: 250px;
+  height: 250px;
+  background: #8cd2f5;
+}
+/* === Dark Mode Autocomplete Styling === */
+body.dark .autocomplete {
+  background-color: #1e2b36;
+  color: #e0e6ed;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark .autocomplete-item:hover {
+  background-color: #2c3a4d;
+}
+
+body.dark {
+  background: var(--bg-dark-gradient);
+  background-size: 400% 400%;
+  animation: meshMoveDark 20s ease infinite;
+  color: var(--text-dark);
+}
+
+@keyframes meshMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes meshMoveDark {
+  0% { background-position: 50% 0%; }
+  50% { background-position: 50% 100%; }
+  100% { background-position: 50% 0%; }
+}
+
+/* === LOADER === */
+.loader {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.3);
+border-top-color: #6c7ecf; /* slightly glowing purple-blue */
+box-shadow: 0 0 20px #6c7ecf80;
+  animation: spin 1s linear infinite;
+  margin: 40px auto;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.hidden {
+  display: none;
+}
+
+/* === Get Advice Button (add if not present in your UI section) === */
+button[type="submit"] {
+  background-color: var(--button-blue);
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button[type="submit"]:hover {
+  background-color: var(--button-blue-hover);
+}
+
+/* === Keep rest of your UI styling here unchanged (header, card, etc.) === */
+
+
+
+/* === HEADER === */
+header.main-header {
+  width: 100%;
+  padding: 20px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(12px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-light);
+  transition: var(--transition);
+}
+body.dark header.main-header {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid var(--border-dark);
+}
+
+header .logo {
+  font-size: 1.6rem;
+  font-weight: bold;
+    color: #0b4775;
+  z-index: 2;
+  text-decoration: none;
+}
+
+body.dark .logo {
+  color: var(--text-accent-dark);
+}
+header .logo:hover {
+  opacity: 0.85;
+}
+
+/* === TOGGLE SWITCH === */
+.theme-toggle {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+}
+
+.toggle-btn {
+  width: 50px;
+  height: 26px;
+  background: #ccc;
+  border-radius: 20px;
+  position: relative;
+  transition: var(--transition);
+}
+.toggle-btn::after {
+  content: '';
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  transition: var(--transition);
+}
+body.dark .toggle-btn {
+  background: var(--pastel-purple);
+}
+body.dark .toggle-btn::after {
+  transform: translateX(24px);
+}
+
+/* === HERO === */
+section.hero {
+  text-align: center;
+  margin-top: 80px;
+  animation: fadeIn 1s ease forwards;
+  z-index: 2;
+}
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #0b4775;;
+}
+body.dark .hero h1 {
+  color: var(--text-accent-dark);
+}
+
+.hero p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+body.dark .hero p {
+  color: var(--text-dark);
+}
+
+/* === CARD FORM === */
+.card {
+  margin-top: 40px;
+  background: var(--card-light);
+  border-radius: var(--radius);
+  padding: 32px;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+  transition: var(--transition);
+  z-index: 2;
+}
+body.dark .card {
+  background: var(--card-dark);
+  box-shadow: 0 8px 24px rgba(255,255,255,0.05);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+/* Autocomplete suggestion box */
+.autocomplete-suggestions {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 5;
+  max-height: 200px;
+  overflow-y: auto;
+}
+.autocomplete-suggestions div {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.autocomplete-suggestions div:hover {
+  background: var(--pastel-mint);
+}
+
+body.dark .autocomplete-suggestions {
+  background: rgb(28, 31, 78);
+}
+body.dark .autocomplete-suggestions div:hover {
+  background: rgba(0, 0, 0, 0.829); 
+}
+
+
+input[type="text"] {
+  padding: 14px 18px;
+  border: none;
+  border-radius: 12px;
+ background: rgba(255,255,255,0.6);
+backdrop-filter: blur(4px);
+box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+
+  font-size: 1rem;
+  outline: none;
+  transition: var(--transition);
+}
+body.dark input[type="text"] {
+  background: #030225;
+  color: white;
+}
+input[type="text"]:focus {
+  box-shadow: 0 0 0 2px var(--pastel-purple);
+}
+
+button {
+  background: var(--pastel-purple);
+  color: black;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
+button:hover {
+  background: var(--pastel-blue);
+  transform: translateY(-2px);
+}
+
+/* === RESULT BOX === */
+.result-box {
+  margin-top: 30px;
+  background: var(--card-light);
+  padding: 24px;
+  border-radius: var(--radius);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  animation: fadeInUp 0.8s ease;
+  transition: var(--transition);
+  z-index: 2;
+}
+body.dark .result-box {
+  background: var(--card-dark);
+}
+.result-box h2 {
+  color: #503591;;
+  margin-bottom: 16px;
+  font-size: 1.3rem;
+}
+.result-box p {
+  margin: 10px 0;
+  line-height: 1.6;
+}
+
+/* === ANIMATIONS === */
+@keyframes gradientFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+  100% { transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 768px) {
+  .hero h1 { font-size: 2rem; }
+  .card, .result-box { padding: 24px; }
+  input[type="text"], button { font-size: 0.95rem; }
+  header.main-header { padding: 12px 24px; }
+}
+
+.card, .result-box {
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+/* === HIDDEN === */
+.hidden {
+  display: none;
+}
+
+body.dark .loader {
+  border: 6px solid rgba(255, 255, 255, 0.15);
+  border-top-color: #8baeff;
+}
+
+button:hover {
+  box-shadow: 0 0 12px rgba(93, 101, 207, 0.3);
+  transform: translateY(-1px) scale(1.02);
+}
+
+body.dark .ai-heading {
+  color: var(--text-accent-dark);
+}

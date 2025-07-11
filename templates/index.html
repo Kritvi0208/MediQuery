@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Health Assistant</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+</head>
+<body>
+<header class="main-header">
+  <!-- <div class="logo">🩺 Health AI</div> -->
+  <a class="logo" href="/">🩺 Health AI</a>
+
+  <div class="theme-toggle" onclick="toggleTheme()">
+    <!-- <span>🌙</span> -->
+    <div class="toggle-btn"></div>
+  </div>
+</header>
+
+
+<section class="hero">
+  <h1>Smart Health Assistant</h1>
+  <p>Describe your symptoms to get fast AI-based suggestions</p>
+</section>
+
+<div class="bg-blob blob-1"></div>
+<div class="bg-blob blob-2"></div>
+
+  <div class="card">
+    <form id="faqForm">
+      <input type="text" id="queryInput" name="query" placeholder="e.g. I have a sore throat and mild fever" required />
+      <button type="submit">Get Advice</button>
+    </form>
+
+    <div id="loader" class="hidden">⏳ Thinking...</div>
+
+    <div id="responseBox" class="result-box hidden">
+      <h2>📋 AI Diagnosis</h2>
+      <p><strong>Your query:</strong> <span id="question"></span></p>
+      <p><strong>AI suggests:</strong> <span id="answer"></span></p>
+    </div>
+
+    <div id="errorBox" class="result-box hidden">
+      <p>⚠️ Sorry, no answer found. Try asking in a different way.</p>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='toggle.js') }}"></script>
+  <script src="{{ url_for('static', filename='autocomplete.js') }}"></script>
+
+
+  <script>
+    const form = document.getElementById('faqForm');
+    const input = document.getElementById('queryInput');
+    const loader = document.getElementById('loader');
+    const responseBox = document.getElementById('responseBox');
+    const errorBox = document.getElementById('errorBox');
+    const category = document.getElementById('category');
+    const question = document.getElementById('question');
+    const answer = document.getElementById('answer');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      loader.classList.remove('hidden');
+      responseBox.classList.add('hidden');
+      errorBox.classList.add('hidden');
+
+      try {
+        const res = await fetch('/api/faq', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ query: input.value })
+        });
+
+        const data = await res.json();
+        loader.classList.add('hidden');
+
+        if (!res.ok || !data.answer) {
+          errorBox.classList.remove('hidden');
+          return;
+        }
+
+        //category.textContent = data.category;
+        question.textContent = data.question;
+        answer.textContent = data.answer;
+        responseBox.classList.remove('hidden');
+      } catch (err) {
+        loader.classList.add('hidden');
+        errorBox.classList.remove('hidden');
+      }
+    });
+  </script>
+</body>
+</html>
