@@ -12,3 +12,4 @@ scipy==1.14.1
 threadpoolctl==3.5.0
 Werkzeug==3.0.4
 flask_cors
+gunicorn
