@@ -137,3 +137,7 @@ def search_faq():
 if __name__ == "__main__":
     app.run(debug=True)
 
+# Vercel-compatible WSGI handler
+def handler(environ, start_response):
+    return app.wsgi_app(environ, start_response)
+
