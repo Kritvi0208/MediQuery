@@ -2,6 +2,7 @@
 
 ## Overview
 This is a smart FAQ module built using Python and Flask. It allows users to enter queries, and the module returns the most relevant FAQ based on the query.
+[Click here to use MediQuery](https://mediquery-2-o6zc.onrender.com)
 
 ## Technologies Used
 - Python
