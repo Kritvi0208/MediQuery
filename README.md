@@ -2,7 +2,6 @@
 
 **MediQuery** is an intelligent FAQ query-response system built using **Python** and **Flask**, enhanced by **NLP (TF-IDF + Cosine Similarity)** to understand user questions and return the most relevant answers.
 
-Deployed live at [**medi-query-nine.vercel.app**](https://medi-query-nine.vercel.app)
 
 ---
 
